@@ -4,6 +4,16 @@ This is an automated test case generation tool for JSF web applications.
 
 It uses Apache BCEL to parse Java Bytecode files, and an ANTLR parser to parse XML files (e.g. .xhtml web pages).
 
+## Requirements
+
+Maven, see installation instructions at: https://maven.apache.org/install.html
+
+Or use following command on Ubuntu:
+
+```bash
+$ sudo apt install maven
+```
+
 ## Setup
 
 Clone from GitHub repository:
@@ -24,7 +34,7 @@ $ cd artifacts/issue-tracker
 You can now compile the sources with:
 
 ```bash
-$ mvn clean compile
+$ mvn clean install
 ```
 
 Alternatively, you can build a deployable WAR file with:
@@ -45,7 +55,7 @@ $ cd tap18-webapp-module
 Then, compile all required sources:
 
 ```bash
-$ mvn clean compile
+$ mvn clean install
 ```
 
 Once successfully compiled, you can start the test case generation tool.
